@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="top"
+        android:layout_margin="0dp"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/medical_medi" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="SymptoCare"
+        android:textSize="48sp"
+        android:textStyle="bold"></LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="SymptoCare"
+        android:textColor="#00897B"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+        android:text="Enter your symptoms:"
+        android:textColor="#455A64"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+    />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=" 0.1" />
+
+    <EditText
+        android:id="@+id/symptomInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Enter symptoms (e.g, fever, cough, headache )"
+        android:inputType="text"
+        android:textColor="#3B383426"
+        android:textColorLink="#0FFFFF"
+        android:textSize="8sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="0.65"
+        android:src="@drawable/medical_line"
+        android:translationX="0dp"
+        android:scaleType="fitCenter"
+        android:alpha="10"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=" 0" />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="Check Symptoms"
+        android:textColor="#D6FFFFFF"
+        android:textColorLink="#539289"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
+</FrameLayout>
